@@ -41,6 +41,4 @@ This module enables you to manage reviews of your management system.
     ],
     "demo": [],
     'installable': True,
-    "certificate": ''
 }
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
