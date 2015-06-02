@@ -2,7 +2,7 @@
 ##############################################################################
 #
 #    OpenERP, Open Source Management Solution
-#    Copyright (C) 2010 Savoir-faire Linux (<http://www.savoirfairelinux.com>).
+#    Copyright (C) 2015 Savoir-faire Linux (<http://www.savoirfairelinux.com>).
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -19,19 +19,8 @@
 #
 ##############################################################################
 
-from openerp import models, fields
+from . import test_mgmtsystem_hazard_risk
 
-
-class ResCompany(models.Model):
-
-    _inherit = "res.company"
-
-    def _get_formula(self):
-        return self.env().ref(
-            'mgmtsystem_hazard_risk.risk_computation_a_times_b_times_c')
-
-    risk_computation_id = fields.Many2one(
-        'mgmtsystem.hazard.risk.computation',
-        'Risk Computation',
-        default=_get_formula
-    )
+checks = [
+    test_mgmtsystem_hazard_risk
+]
