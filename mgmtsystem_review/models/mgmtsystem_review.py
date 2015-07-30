@@ -93,7 +93,7 @@ class mgmtsystem_review_line(orm.Model):
         'type': fields.selection(
             (
                 ('action', 'Action'),
-                ('nonconformity', 'Noncomformity'),
+                ('nonconformity', 'Nonconformity'),
             ),
             'Type',
         ),
