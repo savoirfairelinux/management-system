@@ -75,8 +75,8 @@
                                 <label for="module_mgmtsystem_health_safety_manual"/>
                             </div>
                             <div>
-                                <field name="module_information_security_manual" class="oe_inline"/>
-                                <label for="module_information_security_manual"/>
+                                <field name="module_mgmtsystem_info_security_manual" class="oe_inline"/>
+                                <label for="module_mgmtsystem_info_security_manual"/>
                             </div>
                         </div>
                     </group>

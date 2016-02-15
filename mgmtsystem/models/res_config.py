@@ -108,10 +108,10 @@ class MgmtSystemConfigSettings(models.TransientModel):
         '- This installs the module mgmtsystem_health_safety_manual.'
     )
 
-    module_information_security_manual = fields.Boolean(
+    module_mgmtsystem_info_security_manual = fields.Boolean(
         'Information Security Manual template based on ISO 27001',
         help='Provide an information security manual.\n'
-        '- This installs the module information_security_manual.'
+        '- This installs the module mgmtsystem_info_security_manual.'
     )
 
     # Documentation
